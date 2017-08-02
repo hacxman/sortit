@@ -1,0 +1,17 @@
+haskell try on coreutils' sort -du
+
+some measurements:
+
+time (cat ~/.surf/history.txt | sort -du > /dev/null)
+          vs
+               time (cat ~/.surf/history.txt | sortit > /dev/null)
+
+0m2.249s       0m0.686s
+0m1.916s       0m0.815s
+0m1.805s       0m0.734s
+0m2.062s       0m0.696s
+0m1.820s       0m0.669s
+0m2.038s       0m0.711s
+0m2.608s       0m0.848s
+0m2.149s       0m0.745s
+
