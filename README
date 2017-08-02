@@ -15,3 +15,7 @@ time (cat ~/.surf/history.txt | sort -du > /dev/null)
 0m2.608s       0m0.848s
 0m2.149s       0m0.745s
 
+author recommends to compile it using
+$ ghc --make sortit.hs -O2
+
+enjoy :)
