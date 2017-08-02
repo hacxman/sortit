@@ -4,4 +4,6 @@ import System.IO
 import Control.DeepSeq
 import Data.Set
 
-main = (withFile "/dev/stdin" ReadMode $ \x -> hGetContents x >>= (\nuf -> return $!! unlines $ toList $ fromList $ lines nuf)) >>= putStrLn
+main = (withFile "/dev/stdin" ReadMode $ \x ->
+  hGetContents x >>= (\text ->
+    return $!! unlines $ toList $ fromList $ lines text)) >>= putStrLn
